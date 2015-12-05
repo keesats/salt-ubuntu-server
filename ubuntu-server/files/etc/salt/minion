@@ -1,0 +1,12 @@
+# Managed by SaltStack
+
+# Masterless
+master: localhost
+
+# Local file client
+file_client: local
+
+# File root
+file_roots:
+  base:
+    - /srv/salt

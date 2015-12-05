@@ -1,0 +1,19 @@
+# <--Managed by SaltStack-->
+
+# Set up correct env variables
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Permissions needed for BTSync & Plex
+* * * * * chmod -R 777 /mnt/lankford01
+* * * * * chmod -R 777 /mnt/lankford03
+
+# Ensure BTSync is running
+* * * * * /usr/local/bin/btsync --config /etc/btsync/btsync.conf
+
+# Sync Media from Lankford01 to Lankford03 disk.
+00 01 * * * /usr/bin/rsync -r -p -E -o -g /mnt/lankford01/Media /mnt/lankford03/
+00 02 * * * /usr/bin/rsync -r -p -E -o -g /mnt/lankford01/Shared /mnt/lankford03/
+
+# Enforce Salt highstate every hour
+0 * * * * /usr/bin/salt-call --local state.highstate
