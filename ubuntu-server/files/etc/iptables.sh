@@ -1,5 +1,5 @@
 # !/bin/sh
-# Managed by SaltStack
+# <--Managed by SaltStack-->
 
 # Flush current rulesets
 /sbin/iptables -F
@@ -15,7 +15,7 @@
 # Create new empty IPSet lists
 /sbin/ipset create geoblock hash:net
 
-# List of country codes to block outbound traffic to.
+# List of country codes to block outbound & inbound traffic to.
 ISO="af ca cn jp kp kr pl ru so tw"
 # AF = Afghanistan
 # CA = Canada

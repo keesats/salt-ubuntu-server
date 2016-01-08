@@ -1,6 +1,3 @@
-# <--Managed by SaltStack-->
-# Written by Bradley Lankford
-
 # Ensure sysctl config file is in place
 /etc/sysctl.conf:
   file.managed:

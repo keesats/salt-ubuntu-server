@@ -1,5 +1,3 @@
-# <--Managed by SaltStack-->
-
 # Apply root crontab
 root_crontab:
   cron.file:

@@ -1,5 +1,3 @@
-# <--Managed by SaltStack-->
-
 # Removes various web and chat components
 # that come on Ubuntu by default
 

@@ -1,5 +1,3 @@
-# <--Managed by SaltStack-->
-
 iptables:
   pkg.installed:
     - name: iptables

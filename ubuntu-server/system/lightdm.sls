@@ -1,5 +1,3 @@
-# <--Managed by SaltStack-->
-
 # Hide user and password when logging in
 /usr/share/lightdm/lightdm.conf.d/50-unity-greeter.conf:
   file.managed:

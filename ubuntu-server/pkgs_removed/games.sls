@@ -1,5 +1,3 @@
-# <--Managed by SaltStack-->
-
 # Removes all games that come loaded on Ubuntu by default
 
 aisleriot:

@@ -1,0 +1,8 @@
+# <--Managed by SaltStack-->
+# Disables the "Send occasional system information to Canonical"
+# option in system settings.
+
+[General]
+report_metrics=false
+report_crashes=false
+

@@ -1,5 +1,3 @@
-# <--Managed by SaltStack-->
-
 # Remove miscellaneous apps that aren't needed.
 
 thunderbird:

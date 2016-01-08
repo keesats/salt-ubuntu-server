@@ -1,0 +1,8 @@
+# <--Managed by Saltstack-->
+# Forces the automatic installation of security
+# updates via the unattended-upgrade package
+# and blanks out the option in the GUI for
+# users to modify this otherwise
+
+APT::Periodic::Update-Package-Lists "1";
+APT::Periodic::Unattended-Upgrade "1";
