@@ -1,0 +1,5 @@
+# Managed by SaltStack
+
+# This file is intentionally left blank to disable root login via any/all
+# TTY/console methods.
+
