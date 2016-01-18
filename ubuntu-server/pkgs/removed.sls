@@ -1,0 +1,46 @@
+# Remove packages that I don't use/need/want.
+pkg-removed:
+  pkg.removed:
+    - pkgs:
+      - account-plugin-aim
+      - account-plugin-facebook
+      - account-plugin-flickr
+      - account-plugin-jabber
+      - account-plugin-salut
+      - account-plugin-yahoo
+      - aisleriot
+      - avahi-daemon # .local domain issues
+      - bluez # Bluetooth support
+      - bluez-obexd
+      - cups # Print support
+      - cups-browsed
+      - cups-bsd
+      - cups-client
+      - cups-common
+      - cups-core-drivers
+      - cups-daemon
+      - cups-filters
+      - cups-filters-core-drivers
+      - cups-pk-helper
+      - cups-ppdc
+      - cups-server-common
+      - empathy
+      - flashplugin-installer
+      - gnome-bluetooth
+      - gnome-mahjongg
+      - gnome-mines
+      - gnome-sudoku
+      - gnomine
+      - pidgin
+      - ppp
+      - pppoeconf
+      - rhythmbox
+      - telnet
+      - thunderbird
+      - thunderbird-gnome-support
+      - thunderbird-locale-en
+      - transmission-common
+      - ufw
+      - unity-scope-zotero
+      - whoopsie # Error reporting
+      - xbrlapi # Accessibility pkg
