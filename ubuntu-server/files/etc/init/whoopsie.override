@@ -1,4 +1,4 @@
-# <--Managed by Saltstack-->
+# Managed by Saltstack
 # Disables the "Send error reports to Canonical"
 # feature in system settings.
 

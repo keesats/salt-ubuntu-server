@@ -1,5 +1,5 @@
 # !/bin/sh
-# <--Managed by SaltStack-->
+# Managed by SaltStack
 
 # Flush current rulesets
 /sbin/iptables -F

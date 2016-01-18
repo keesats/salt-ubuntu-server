@@ -1,4 +1,4 @@
-# <--Managed by SaltStack-->
+# Managed by SaltStack
 # Disables the "Send occasional system information to Canonical"
 # option in system settings.
 

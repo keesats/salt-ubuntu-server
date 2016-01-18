@@ -1,5 +1,4 @@
-# <--Managed by SaltStack-->
-
+# Managed by SaltStack
 # Enables automatic security updates for Ubuntu, but
 # sets everything else to require user intervention,
 # unless another Salt state dictates that a package

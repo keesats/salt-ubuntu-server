@@ -1,4 +1,4 @@
-# <--Managed by Saltstack-->
+# Managed by Saltstack
 # Forces the automatic installation of security
 # updates via the unattended-upgrade package
 # and blanks out the option in the GUI for

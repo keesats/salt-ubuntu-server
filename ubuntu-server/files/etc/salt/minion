@@ -1,4 +1,4 @@
-# <--Managed by SaltStack-->
+# Managed by SaltStack
 
 # Masterless
 master: localhost
