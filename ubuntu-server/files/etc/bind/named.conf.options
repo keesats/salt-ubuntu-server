@@ -1,0 +1,25 @@
+// <--Managed by SaltStack-->
+options {
+        directory "/var/cache/bind";
+
+        // Forwarders list
+        forwarders {
+                208.67.222.222;
+                208.67.220.220;
+        };
+
+	// Disable DNSSEC
+        dnssec-enable no;
+        dnssec-validation no;
+
+        auth-nxdomain no;    # conform to RFC1035
+        listen-on-v6 { any; };
+
+	// Allow queries and recursion
+        allow-query { any; };
+        allow-recursion { any; };
+        recursion yes;
+
+	// Disable strict domain syntax checking
+        check-names master ignore;
+};

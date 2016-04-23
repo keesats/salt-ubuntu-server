@@ -1,0 +1,16 @@
+; <--Managed by SaltStack-->
+; BIND data file for blocked domains in bh-dns.zones
+;
+$TTL    3600
+@       IN      SOA     ns1.example.local. info.example.local. (
+                            2016042301         ; Serial
+                                  7200         ; Refresh
+                                   120         ; Retry
+                               2419200         ; Expire
+                                  3600)        ; Default TTL
+;
+@       IN      NS      localhost.
+                A       127.0.0.1 ; Redirects blocked domains to localhost
+*       IN      A       127.0.0.1 ; Redirects subdomains of blocked domains to localhost
+                AAAA    ::1 ; Redirects blocked domains to to IPv6 localhost
+*       IN      AAAA    ::1 ; Redirects subdomains of blocked domains to IPv6 localhost

@@ -5,10 +5,10 @@ pkg-installed:
       - htop
       - ipset
       - iptables
+      - ncdu
       - nmap
       - python-gpgme
       - python-software-properties
       - salt-minion
       - traceroute
-      - unattended-upgrades
       - whois

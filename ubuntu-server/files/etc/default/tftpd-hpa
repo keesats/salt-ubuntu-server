@@ -1,0 +1,6 @@
+# <--Managed by SaltStack-->
+
+TFTP_USERNAME="tftp"
+TFTP_DIRECTORY="/tftpboot"
+TFTP_ADDRESS="192.168.0.13:69"
+TFTP_OPTIONS="--secure"

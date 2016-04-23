@@ -1,11 +1,14 @@
-# Managed by SaltStack
+# <--Managed by SaltStack-->
 
 # Set up correct env variables
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-# Ensure btsync is running
+# Ensure BTSync is running
 * * * * * /usr/local/bin/btsync --config /etc/btsync/btsync.conf
 
-# Salt highstate
+# Enforce Salt highstate every hour
 0 * * * * /usr/bin/salt-call --local state.highstate
+
+# Run Emerging Threats ASA ruleset update every night
+00 00 * * * /root/ASA/emerging-threats.sh

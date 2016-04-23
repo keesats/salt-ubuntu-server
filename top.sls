@@ -1,8 +1,11 @@
 base:
   '*':
-    - ubuntu-server.pkgs.installed # Installed pkgs
-    - ubuntu-server.pkgs.removed # Removed pkgs
-    - ubuntu-server.pkgs.repos # Added repos
-    - ubuntu-server.system.cron # Cron settings
-    - ubuntu-server.system.privacy # Privacy settings
-    - ubuntu-server.system.security # Security settings
+    - ubuntu-server.asa-emerging-threats
+    - ubuntu-server.bind9-server
+    - ubuntu-server.pkgs.installed
+    - ubuntu-server.pkgs.removed
+    - ubuntu-server.repos.saltstack
+    - ubuntu-server.system.cron
+    - ubuntu-server.system.motd
+    - ubuntu-server.system.securetty
+    - ubuntu-server.system.sysctl
