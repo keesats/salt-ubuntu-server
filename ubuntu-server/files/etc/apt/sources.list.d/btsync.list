@@ -1,0 +1,3 @@
+# Managed by SaltStack
+
+deb http://linux-packages.getsync.com/btsync/deb btsync non-free
