@@ -1,7 +1,7 @@
 base:
   '*':
-    - ubuntu-server.asa-emerging-threats
-    - ubuntu-server.bind9-server
+#    - ubuntu-server.asa-emerging-threats #Off by default
+#    - ubuntu-server.bind9-server #Off by default
     - ubuntu-server.pkgs.installed
     - ubuntu-server.pkgs.removed
     - ubuntu-server.repos.saltstack

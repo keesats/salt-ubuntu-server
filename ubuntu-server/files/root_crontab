@@ -11,7 +11,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 0 * * * * /usr/bin/salt-call --local state.highstate
 
 # Run Emerging Threats ASA ruleset updates every night
-00 00 * * * /root/ASA/emerging-threats.sh
+# 00 00 * * * /root/ASA/emerging-threats.sh
 
 # Run Bind9 BH-DNS updates every night
-00 01 * * * /root/ASA/emerging-threats.sh
+# 00 01 * * * /root/ASA/emerging-threats.sh

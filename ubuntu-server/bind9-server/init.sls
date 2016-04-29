@@ -15,6 +15,7 @@ bind9-server:
       - file: /etc/bind/named.conf
       - file: /etc/bind/named.conf.options
       - file: /etc/bind/blockeddomains.db
+      - file: /etc/bind/blocked.zones
 
 /etc/bind/named.conf:
   file.managed:
@@ -31,6 +32,15 @@ bind9-server:
     - group: root
     - mode: 644
     - source: salt://ubuntu-server/files/etc/bind/named.conf.options
+    - require:
+      - pkg: bind9
+
+/etc/bind/blocked.zones:
+  file.managed:
+    - user: root
+    - group: root
+    - mode: 644
+    - source: salt://ubuntu-server/files/etc/bind/blocked.zones
     - require:
       - pkg: bind9
 

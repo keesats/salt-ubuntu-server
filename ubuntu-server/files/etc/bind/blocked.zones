@@ -1,0 +1,3 @@
+zone "adcolony.com" { type master; file "/etc/bind/blockeddomains.db"; };
+zone "adtilt.com" { type master; file "/etc/bind/blockeddomains.db"; };
+zone "crashlytics.com" { type master; file "/etc/bind/blockeddomains.db"; };
