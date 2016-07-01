@@ -6,6 +6,7 @@ base:
     - ubuntu-server.pkgs.removed
     - ubuntu-server.repos.saltstack
     - ubuntu-server.system.cron
+    - ubuntu-server.system.iptables
     - ubuntu-server.system.motd
     - ubuntu-server.system.securetty
     - ubuntu-server.system.sysctl

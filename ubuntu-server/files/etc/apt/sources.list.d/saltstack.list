@@ -1,4 +1,3 @@
 # Managed by SaltStack
 
-deb http://repo.saltstack.com/apt/ubuntu/ubuntu14/latest trusty main
-# deb-src http://ppa.launchpad.net/saltstack/salt/ubuntu trusty main
+deb http://repo.saltstack.com/apt/ubuntu/16.04/amd64/latest xenial main
